@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK NOW</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+  
+    background-image: url("himgrest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This will keep the background fixed while scrolling */
+
+
+        }
+        .section-class {
+    background-image: url("himgrest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+        .banner {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./th\ \(4\).jpeg") center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding-bottom: 20px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: 420px 420px;
+        }
+
+        .card-img {
+            background: url("./th\ \(3\).jpeg") center/cover no-repeat;
+        }
+
+        .banner h2 {
+            padding-bottom: 40px;
+            margin-bottom: 20px;
+        }
+
+        .card-content {
+            background: #fff;
+            height: 330px;
+        }
+
+        .card-content h3 {
+            text-align: center;
+            color: #000;
+            padding: 25px 0 10px 0;
+            font-size: 26px;
+            font-weight: 500;
+        }
+
+        .form-row {
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        form select,
+        form input {
+            display: block;
+            width: 100%;
+            margin: 15px 12px;
+            padding: 5px;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #eee;
+            font-weight: 300;
+        }
+
+        form input[type=text],
+        form input[type=number],
+        form input::placeholder,
+        select {
+            color: #9a9a9a;
+        }
+
+        form input[type=submit] {
+            color: #fff;
+            background: #f2745f;
+            padding: 12px 0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form input[type=submit]:hover {
+            opacity: 0.9;
+        }
+
+        @media(max-width: 992px) {
+            .card-container {
+                grid-template-columns: 100%;
+                width: 100vw;
+            }
+
+            .card-img {
+                height: 330px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+ 
+
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid row-12 border-2 rounded-top px-4"
+        style="background-color:black; height: 50px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+        
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="color:white;"><i>Contact Us</i></a>
+                </li>
+            </ul>
+        </div>
+        
+
+    </nav>
+
+    <section class="banner">
+        <h2><u>BOOK YOUR JOURNEY NOW</u></h2>
+        <div class="card-container">
+
+            <div class="card-img"></div>
+            <div class="card-content">
+                <h3><u>Book Now</u></h3>
+                <form id="reservationForm" action="">
+                    <div class="form-row">
+                        <select name="days" id="">
+                            <option value="day-select">
+                                select day
+                            </option>
+                            <option value="Sunday">
+                                "Sunday"
+                            </option>
+                            <option value="Monday">
+                                "Monday"
+                            </option>
+                            <option value="Tuesday">
+                                "Tuesday"
+                            </option>
+                            <option value="Wednesday">
+                                "Wednesday"
+                            </option>
+                            <option value="Thursday">
+                                "Thursday"
+                            </option>
+                            <option value="Friday">
+                                "Friday"
+                            </option>
+                            <option value="Saturday">
+                                "Saturday"
+                            </option>
+                        </select>
+                        <select name="hours" id="">
+                            <option value="hours-select">
+                                select hour
+                            </option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                            <option value="21">21:00</option>
+                            <option value="22">22:00</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Phone Number">
+                    </div>
+                    <div class="form-row">
+                        <input type="number" placeholder="How many Person?" min="1">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin = "anonymous" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+                document.getElementById('reservationForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    alert('Your reservation is successful! We look forward to seeing you.');
+                });
+        </script>
+</body>
+
+</html>
